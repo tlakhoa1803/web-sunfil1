@@ -22,34 +22,37 @@ Một dự án web bán hàng đơn giản được xây dựng bằng **React**
 - 🛍️ Lucide Icons (biểu tượng giỏ hàng)
 
 ---
-graph TD
-  A1[components]:::folder
-  A1 --> B1[cart/Cart.jsx<br/><i>Component giỏ hàng</i>]
-  A1 --> B2[filter/FilterPanel.jsx<br/><i>Bộ lọc sản phẩm</i>]
-  A1 --> B3[banner]:::folder
-  B3 --> C1[BannerCarousel.jsx<br/><i>Hiển thị banner</i>]
-  B3 --> C2[FeaturesProducts.jsx<br/><i>Sản phẩm phổ biến</i>]
-  A1 --> B4[Gridcard]:::folder
-  B4 --> C3[ProductCard.jsx<br/><i>Thẻ sản phẩm</i>]
-  B4 --> C4[SortBar.jsx<br/><i>Sắp xếp sản phẩm</i>]
-  A1 --> B5[header]:::folder
-  B5 --> C5[CategoryMenu.jsx<br/><i>Popup danh mục</i>]
-  B5 --> C6[Headbar.jsx<br/><i>Thanh header</i>]
-  A1 --> B6[footer/Footerbar.jsx<br/><i>Footer website</i>]
-
-  D1[context]:::folder --> D2[CartContext.jsx<br/><i>Quản lý giỏ hàng bằng Context API</i>]
-  E1[data]:::folder
-  E1 --> E2[mockCart.js<br/><i>Dữ liệu giỏ hàng mẫu</i>]
-  E1 --> E3[mockBanner.js<br/><i>Dữ liệu banner mẫu</i>]
-  E1 --> E4[mockProducts.js<br/><i>Dữ liệu sản phẩm mẫu</i>]
-
-  F1[hooks]:::folder --> F2[useProductFilter.jsx<br/><i>Hook lọc sản phẩm</i>]
-  G1[pages]:::folder --> G2[ProductCategoryPage.jsx<br/><i>Trang chính</i>]
-  H1[utils]:::folder --> H2[sortUtils.js<br/><i>Hàm sắp xếp sản phẩm</i>]
-  I1[App.jsx<br/><i>Giao diện tổng</i>]
-  I2[main.jsx<br/><i>Khởi động ứng dụng</i>]
-
-  classDef folder fill:#f5f5f5,stroke:#888,stroke-width:1px;
+## 📁 Cấu trúc thư mục
+├── components/ <br>
+│ ├── cart/ # Các component liên quan đến giỏ hàng <br>
+│ │ └── Cart.jsx <br>
+│ ├──filter/ # Các component liên quan đến lọc <br>
+│ │ └── FilterPanel.jsx <br>
+│ ├──banner/ # Các component liên quan đến banner <br>
+│ │ └── BannerCarousel.jsx / # Xử lý hiển thị banner <br>
+│ │ └── FeaturesProducts.jsx / # Xử lý các sản phẩm phổ biển <br>
+│ ├──Gridcard/ # Các component liên quan đến hiển thị sản phẩm <br>
+│ │ └── ProductCard.jsx / # Xử lý các sản phẩm hiển thụ (mua hàng) <br>
+│ │ └── SortBar.jsx / # Xử lý sắp xếp các sản phẩm <br>
+│ ├──header/ # Các component liên quan header <br>
+│ │ └── CategoryMenu.jsx / # Xử lý pop up danh mục sản phẩm <br>
+│ │ └── headbar.jsx / # Xử lý header <br>
+│ ├──footer/ # Các component liên quan footer <br>
+│ │ └── footerbar.jsx / # Xử lý các hiển thị footer <br>
+├── context/ <br>
+│ └── CartContext.jsx # Quản lý giỏ hàng với Context API <br>
+├── data/ <br>
+│ └── mockCart.js # Dữ liệu đơn hàng mẫu <br>
+│ └── mockBanner.js # Dữ liệu banner mẫu <br>
+│ └── mockProducts.js # Dữ liệu sản phẩm mẫu <br>
+├── hooks/ <br>
+│ └── useProductFilter.jsx/ #Xử lý lọc sản phẩm quá các điều kiện <br>
+├── pages/ <br>
+│ └── ProductCategoryPage.jsx/ # Trang chủ hiển thị các component <br>
+├── utils/ <br>
+│ └── sortUtils.js/ # Xử lý sort sản phẩm <br>
+├── App.jsx # Trang chính <br>
+└── main.jsx # Điểm khởi động ứng dụng <br>
 
 ## ⚙️ Cài đặt và chạy dự án
 
