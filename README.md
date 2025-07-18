@@ -1,12 +1,56 @@
-# React + Vite
+# 🛒 Simple E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Một dự án web bán hàng đơn giản được xây dựng bằng **React** nhằm mô phỏng các tính năng cơ bản như:
 
-Currently, two official plugins are available:
+- Hiển thị danh sách sản phẩm
+- Thêm sản phẩm vào giỏ hàng
+- Tăng/giảm số lượng sản phẩm trong giỏ
+- Hiệu ứng hover/click để xem giỏ hàng
+- Tính tổng số lượng và tổng giá trị đơn hàng
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+![alt text](image.png)
+![alt text](image-1.png)
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Công nghệ sử dụng
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ ReactJS + Vite
+- 🧠 Context API (quản lý trạng thái giỏ hàng)
+- 🧪 Mock data (sản phẩm)
+- 🎨 Tailwind CSS (giao diện)
+- 🛍️ Lucide Icons (biểu tượng giỏ hàng)
+
+---
+
+## 📁 Cấu trúc thư mục
+├── components/
+│ ├── cart/ # Các component liên quan đến giỏ hàng
+│ │ └── Cart.jsx
+│ ├──filter/ # Các component liên quan đến lọc
+│ │ └── FilterPanel.jsx
+│ ├──banner/ # Các component liên quan đến banner
+│ │ └── BannerCarousel.jsx / # Xử lý hiển thị banner
+│ │ └── FeaturesProducts.jsx / # Xử lý các sản phẩm phổ biển
+│ ├──Gridcard/ # Các component liên quan đến hiển thị sản phẩm
+│ │ └── ProductCard.jsx / # Xử lý các sản phẩm hiển thụ (mua hàng)
+│ │ └── SortBar.jsx / # Xử lý sắp xếp các sản phẩm
+│ ├──header/ # Các component liên quan header
+│ │ └── CategoryMenu.jsx / # Xử lý pop up danh mục sản phẩm
+│ │ └── headbar.jsx / # Xử lý header
+│ ├──footer/ # Các component liên quan footer
+│ │ └── footerbar.jsx / # Xử lý các hiển thị footer
+├── context/
+│ └── CartContext.jsx # Quản lý giỏ hàng với Context API
+├── data/
+│ └── mockCart.js # Dữ liệu đơn hàng mẫu
+│ └── mockBanner.js # Dữ liệu banner mẫu
+│ └── mockProducts.js # Dữ liệu sản phẩm mẫu
+├── hooks/
+│ └── useProductFilter.jsx/ #Xử lý lọc sản phẩm quá các điều kiện
+├── pages/
+│ └── ProductCategoryPage.jsx/ # Trang chủ hiển thị các component
+├── utils/
+│ └── sortUtils.js/ # Xử lý sort sản phẩm
+├── App.jsx # Trang chính
+└── main.jsx # Điểm khởi động ứng dụng
