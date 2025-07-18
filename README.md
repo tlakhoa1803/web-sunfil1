@@ -23,34 +23,16 @@ Một dự án web bán hàng đơn giản được xây dựng bằng **React**
 
 ---
 
-## 📁 Cấu trúc thư mục
-├── components/
-│ ├── cart/ # Các component liên quan đến giỏ hàng
-│ │ └── Cart.jsx
-│ ├──filter/ # Các component liên quan đến lọc
-│ │ └── FilterPanel.jsx
-│ ├──banner/ # Các component liên quan đến banner
-│ │ └── BannerCarousel.jsx / # Xử lý hiển thị banner
-│ │ └── FeaturesProducts.jsx / # Xử lý các sản phẩm phổ biển
-│ ├──Gridcard/ # Các component liên quan đến hiển thị sản phẩm
-│ │ └── ProductCard.jsx / # Xử lý các sản phẩm hiển thụ (mua hàng)
-│ │ └── SortBar.jsx / # Xử lý sắp xếp các sản phẩm
-│ ├──header/ # Các component liên quan header
-│ │ └── CategoryMenu.jsx / # Xử lý pop up danh mục sản phẩm
-│ │ └── headbar.jsx / # Xử lý header
-│ ├──footer/ # Các component liên quan footer
-│ │ └── footerbar.jsx / # Xử lý các hiển thị footer
-├── context/
-│ └── CartContext.jsx # Quản lý giỏ hàng với Context API
-├── data/
-│ └── mockCart.js # Dữ liệu đơn hàng mẫu
-│ └── mockBanner.js # Dữ liệu banner mẫu
-│ └── mockProducts.js # Dữ liệu sản phẩm mẫu
-├── hooks/
-│ └── useProductFilter.jsx/ #Xử lý lọc sản phẩm quá các điều kiện
-├── pages/
-│ └── ProductCategoryPage.jsx/ # Trang chủ hiển thị các component
-├── utils/
-│ └── sortUtils.js/ # Xử lý sort sản phẩm
-├── App.jsx # Trang chính
-└── main.jsx # Điểm khởi động ứng dụng
+<pre><code>## 📁 Cấu trúc thư mục ```text ├── components/ │ ├── cart/ # Các component liên quan đến giỏ hàng │ │ └── Cart.jsx │ ├── filter/ # Các component liên quan đến lọc │ │ └── FilterPanel.jsx │ ├── banner/ # Các component liên quan đến banner │ │ ├── BannerCarousel.jsx # Hiển thị banner │ │ └── FeaturesProducts.jsx # Sản phẩm phổ biến │ ├── Gridcard/ # Hiển thị sản phẩm │ │ ├── ProductCard.jsx # Mua hàng │ │ └── SortBar.jsx # Sắp xếp │ ├── header/ # Header │ │ ├── CategoryMenu.jsx # Popup danh mục │ │ └── Headbar.jsx # Header │ ├── footer/ # Footer │ │ └── FooterBar.jsx # Hiển thị footer ├── context/ │ └── CartContext.jsx # Context giỏ hàng ├── data/ │ ├── mockCart.js # Dữ liệu đơn hàng │ ├── mockBanner.js # Dữ liệu banner │ └── mockProducts.js # Dữ liệu sản phẩm ├── hooks/ │ └── useProductFilter.jsx # Lọc sản phẩm ├── pages/ │ └── ProductCategoryPage.jsx # Trang chủ ├── utils/ │ └── sortUtils.js # Sắp xếp sản phẩm ├── App.jsx # Trang chính └── main.jsx # Khởi động ứng dụng ``` </code></pre>
+## ⚙️ Cài đặt và chạy dự án
+
+```bash
+# Clone project
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+# Cài đặt gói
+npm install
+
+# Chạy project
+npm run dev
