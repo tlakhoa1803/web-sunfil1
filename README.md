@@ -58,7 +58,7 @@ Một dự án web bán hàng đơn giản được xây dựng bằng **React**
 
 ```bash
 # Clone project
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/tlakhoa1803/web-sunfil1.git
 cd your-repo-name
 
 # Cài đặt gói
